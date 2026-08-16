@@ -79,14 +79,12 @@ __version__ = "0.1.1"
 # =========================================================
 # SHARED CONFIG
 # =========================================================
-DB_PATH = r"C:\Users\H4CKRR.DESKTOP-0H6OPCA\claude-agent.db"
+DB_PATH = r"C:\claude-agent.db"
 
 # Matches the real filesystem extension's launch args:
 #   node .../index.js C:/ D:\@\ D:\@home\
 ALLOWED_DIRS = [
     Path("C:/"),
-    Path("D:/@/"),
-    Path("D:/@home/"),
 ]
 
 # Every subprocess this server spawns (run_cmd, run_powershell, run_process,
@@ -348,7 +346,7 @@ def close_pid(pid: int) -> str:
 # =========================================================
 # FILESYSTEM
 # (matches ant.dir.ant.anthropic.filesystem's dist/index.js tool set,
-#  launched with roots C:/, D:/@/, D:/@home/)
+#  launched with root C:/)
 # =========================================================
 # =========================================================
 # SHELL COMMAND VALIDATOR
